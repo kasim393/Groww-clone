@@ -1,0 +1,126 @@
+.footer {
+  margin-top: 100px;
+  background: var(--secondaryClr150);
+  color: var(--primaryBg);
+}
+.footer-top {
+  font-size: 15px;
+  font-weight: 500;
+}
+.footer-list {
+  display: flex;
+  padding-top: 30px;
+}
+.footer-list-left .footer-logo {
+  width: 150px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+.footer-list-left .address {
+  padding: 0 10px;
+  line-height: 15px;
+  color: var(--constantWhite);
+  margin-top: 10px;
+}
+.footer-list-left .underline {
+  line-height: 10px;
+  color: var(--constantWhite);
+  padding: 0 10px;
+  text-decoration: underline;
+  margin-top: 10px;
+}
+.social {
+  display: flex;
+  margin-top: 25px;
+}
+.social img {
+  margin-inline: 5px;
+}
+.footer-list-right {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+}
+.footer-col-3 .col-head {
+  padding: 10px 0;
+  margin-bottom: 15px;
+  color: var(--constantWhite);
+  font-size: 1.125rem;
+  letter-spacing: 0.01em;
+  line-height: 160%;
+}
+.footer-col-3 p {
+  padding-bottom: 10px;
+  color: var(--constantWhite);
+}
+.footer-line {
+  height: 1px;
+  opacity: 0.1;
+  border-bottom: 1px solid var(--constantWhite);
+  margin-top: 30px;
+  color: var(--primaryBg);
+  font-size: 15px;
+  width: 100%;
+}
+.footer-bottom {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 24px;
+}
+.footer-company {
+  display: flex;
+  align-items: center;
+}
+.footer-company .heart {
+  font-size: 32px;
+  color: var(--growwRed);
+  margin: 0 4px;
+}
+.footer-store {
+  display: flex;
+  gap: 2rem;
+}
+
+@media screen and (max-width: 910px) {
+  .footer-list {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-list-left {
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-list-right {
+    width: 100%;
+  }
+  .footer-company {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  .footer-col-3 .col-head {
+    font-size: 13px;
+    letter-spacing: 0.1px;
+    line-height: 2;
+    font-weight: 500;
+  }
+  .footer-col-3 p {
+    line-height: 16px;
+    margin-top: 5px;
+    color: var(--subText);
+    font-size: 13px;
+    letter-spacing: 0.1px;
+  }
+  .footer-list-left .address {
+    font-size: 13px;
+  }
+  .footer-company .heart {
+    font-size: 16px;
+  }
+}
