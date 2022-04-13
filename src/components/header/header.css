@@ -73,7 +73,7 @@
 .valign-wrapper img {
   margin-left: -7px;
 }
-span:before {
+.left-header span:before {
   content: "";
   font-size: 100%;
   animation-name: head;
