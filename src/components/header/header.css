@@ -140,6 +140,9 @@
     margin-top: 100px;
   }
   .left-header {
+    /* align-items: center; */
+  }
+  .left-header button {
     align-items: center;
   }
 }
