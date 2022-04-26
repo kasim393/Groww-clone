@@ -1,0 +1,18 @@
+name = "gpux_landing"
+# type = "javascript" is required to use the `[build]` section
+type = "webpack"
+account_id = "20bf2f5d11d26a322e389687896a6601"
+workers_dev = true
+route = "gpux.ai/*"
+zone_id = "30d2c0e577ab1d6a06d0730381197d20"
+
+[site]
+bucket = "./dist/client"
+entry-point = "workers-site"
+include = ["**/*"]
+
+[build]
+command = "npm run build"
+
+[build.upload]
+format="service-worker"
