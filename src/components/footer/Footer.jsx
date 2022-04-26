@@ -12,9 +12,9 @@ const Footer = () => {
                 alt=""
                 className="footer-logo"
               />
-              <p class="address">No.11, 2nd floor, 80 FT Road</p>
-              <p class="address">4th Block, S.T Bed, Koramangala</p>
-              <p class="address">Bengaluru – 560034</p>
+              <p class="address">4th Rock</p>
+              <p class="address">S.T Bed, From the Sun</p>
+              <p class="address">The Interwebs – 311</p>
               <p class="underline">Contact Us</p>
               <div className="social">
                 <img
@@ -45,29 +45,28 @@ const Footer = () => {
             </div>
             <div className="footer-list-right">
               <div className="footer-col-3">
-                <div className="col-head">PRODUCTS</div>
-                <p>Stocks</p>
-                <p>Futures & Options</p>
-                <p>Mutual Funds</p>
-                <p>Fixed Deposit</p>
-                <p>US Stocks</p>
+                <div className="col-head">WORKLOADS</div>
+                <p>Container</p>
+                <p>AI</p>
+                <p>Render</p>
+                <p>Transcode</p>
+                <p>Live Stream</p>
               </div>
               <div className="footer-col-3">
-                <div className="col-head">GROWW</div>
+                <div className="col-head">GPUx</div>
                 <p>About Us</p>
-                <p>Pricing</p>
+                <p>Current Round</p>
                 <p>Blog</p>
                 <p>Media & Press</p>
                 <p>Help and Support</p>
               </div>
               <div className="footer-col-3">
                 <div className="col-head">QUICK LINKS</div>
-                <p>AMC Mutual Funds</p>
-                <p>Calculators</p>
-                <p>Glossary</p>
-                <p>Open Demat Account</p>
-                <p>Groww Digest</p>
-                <p>Groww Academy</p>
+                <p>App</p>
+                <p>Video Inspector</p>
+                <p>Become a Farmer</p>
+                <p>Documentation</p>
+                <p>GPUx Academy</p>
                 <p>Sitemap</p>
               </div>
             </div>
@@ -76,8 +75,8 @@ const Footer = () => {
         <div className="footer-line"></div>
         <div className="footer-bottom">
           <div className="footer-company">
-            ⓒ&nbsp; 2022 Groww. All rights reserved, Built with{" "}
-            <span class="heart">♥</span>in India
+            ⓒ&nbsp; 2022 GPUx. All rights reserved, Built with{" "}
+            <span class="heart">♥</span>
           </div>
           <div className="footer-store">
             <img

@@ -4,10 +4,10 @@ const Test = () => {
   return (
     <div className="testimonal ">
       <div className="container web-align">
-        <div className="heading">Creating proud investors.</div>
+        <div className="heading">Creating proud denizens.</div>
         <div className="container-para">
           <p>
-            You can feel the pride of being a Groww investor in their words.
+            You can feel the pride of being a GPUx user in their words.
           </p>
           <span>
             View More
@@ -91,9 +91,8 @@ const Test = () => {
               </div>
             </div>
             <div className="card-review">
-              “Groww.in was the platform where I first got onboard to MF and I
-              would have to say, even for a beginner like me it made things
-              quite easier to explore and invest.
+              Using Blender my renders started taking 17hr+, reached out, Ivan was quick to get me onboard, and showed how easy it is to offload a .blend file.
+              Im very bullish on this tech now and waiting to buy in.
             </div>
             <div className="card-author">Ankit Puri</div>
             <div className="card-company">Product Specialist, Google</div>
@@ -167,7 +166,7 @@ const Test = () => {
             <div className="card-review">
               “Actually, the UI is extremely simple and easy for users to adapt,
               that’s what makes it unique. Many of my referrals have also joined
-              and enjoying GROWW.
+              and enjoying GPUx.
             </div>
             <div className="card-author">Amit Sharma</div>
             <div className="card-company">
@@ -241,13 +240,13 @@ const Test = () => {
               </div>
             </div>
             <div className="card-review">
-              “If you are one of those who would like to take control of how you
-              save, use Groww. It’s ridiculously easy portal. It just took me 5
-              mins to set up and invest.
+              “It's ridiculous how much money we saved on our large resolution transcodes
+              using GPUx. We opened up an entirely new business model with the cost
+              savings compared to using AWS.
             </div>
             <div className="card-author">Roopa Ambekar</div>
             <div className="card-company">
-              Founder of Uber Medspa & Style Lounge
+              Founder of Uber Style Lounge
             </div>
           </div>
         </div>

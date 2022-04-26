@@ -6,11 +6,10 @@ const Showcase = () => {
       <div className="showcase-row">
         <div className="showcase-top">
           <div className="showcase-top_left">
-            <div class="MainText">Invest anywhere,</div>
-            <div class="MainText">anytime.</div>
+            <div class="MainText">Connect your GPUs</div>
+            <div class="MainText">and earn</div>
             <div class="Para">
-              Don’t worry about which device to use. Because we’re in every one
-              of them.
+              As long as you have Windows (/w WSL2) or Linux you can farm out your hardware.
             </div>
             <div class="BotWrapper">
               <div class="valign-wrapper">
@@ -24,9 +23,9 @@ const Showcase = () => {
                   />
                 </div>
                 <div>
-                  <div class="botwrapper-head">Stay on top of everything</div>
+                  <div class="botwrapper-head">Track your cluster</div>
                   <div class="botwrapper-para">
-                    Keep track of your investments at anytime with Groww.
+                    Keep track of your profits and utilization.
                   </div>
                 </div>
               </div>
@@ -43,8 +42,8 @@ const Showcase = () => {
                 <div>
                   <div class="botwrapper-head">Always in Sync</div>
                   <div class="botwrapper-para">
-                    Groww will take care of synchronizing data so you can focus
-                    on investing.
+                    GPUx will take care of providing your hardware work so you focus
+                    on infrastructure.
                   </div>
                 </div>
               </div>
@@ -82,11 +81,10 @@ const Showcase = () => {
           <div class="heading">We’re with you, at every step.</div>
           <div class="para">
             For any query you have, find the answer quickly on our Help &amp;
-            Support. Need a little more help? We’re happy to talk via call or
-            chat.
+            Support. Need a little more help? We’re happy to talk in person or via chat.
           </div>
           <div>
-            <button>Get In Touch</button>
+            <button><p href="https://discord.com/invite/jjBSjSF" target="_blank">Get In Touch</p></button>
           </div>
         </div>
         <div className="banner-right">

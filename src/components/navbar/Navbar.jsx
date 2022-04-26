@@ -33,7 +33,7 @@ const Navbar = () => {
             />
           </div>
           <div>
-            <button>Login/Register</button>
+            <button>Go to Dashboard</button>
           </div>
         </div>
       </div>
@@ -81,24 +81,24 @@ const Navbar = () => {
                   />
                 </div>
                 <div className="mobile-login-div">
-                  <p>Simple & Free Investing</p>
-                  <button>Login/Register</button>
+                  <p>The GPU EDGE</p>
+                  <button>Go to Dashboard</button>
                 </div>
               </div>
               <div className="mobile-menu-bottom">
                 <div className="mobile-menu-item">
-                  <p>Filter Stocks</p>
-                  <p>Filter Mutual Funds</p>
-                  <p>Filter US Stocks</p>
+                  <p>Placeholder 1</p>
+                  <p>Placeholder 2</p>
+                  <p>Placeholder 3</p>
                 </div>
                 <div className="mobile-divider"></div>
                 <div className="mobile-menu-item">
-                  <p>Smart Save</p>
-                  <p>Compare Funds</p>
+                  <p>Placeholder 11</p>
+                  <p>Placeholder 12</p>
                 </div>
                 <div className="mobile-divider"></div>
                 <div className="mobile-menu-item">
-                  <p>View in App</p>
+                  <p>Placeholder 21</p>
                   <p>Help and Support</p>
                 </div>
                 <div className="mobile-divider"></div>

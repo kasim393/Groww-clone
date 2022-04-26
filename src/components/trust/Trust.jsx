@@ -7,10 +7,10 @@ const Trust = () => {
         <div className="left-trust">
           <div class="TextWrapper">
             <div class="Heading">Trusted by</div>
-            <div class="Heading">20 Million+ users</div>
+            <div class="Heading">(currently) a few users</div>
             <div class="Para">
-              Our cutting-edge technology ensure that all your information
-              remains fully encrypted and secure.
+              Our cutting-edge reputation system ensures that your peers
+              provide quality and secure service.
             </div>
           </div>
         </div>

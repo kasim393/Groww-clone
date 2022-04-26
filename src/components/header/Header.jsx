@@ -6,10 +6,10 @@ const Header = () => {
     <div className="header web-align">
       <div className="left-header">
         <h1>
-          Invest in <span></span>
+          Offload <span></span>
         </h1>
         <p>
-          Trusted by <b>Millions</b> of Indians. Start investing today.
+          Trusted by <b>(currently) a few</b> humans. Start on the edge today.
         </p>
         <button>Get Started</button>
       </div>
@@ -27,7 +27,7 @@ const Header = () => {
               height="49"
               alt="MF - Groww"
             />
-            <p>Mutual Funds</p>
+            <p>Run Containers</p>
           </a>
           <a href="#">
             <img
@@ -36,7 +36,7 @@ const Header = () => {
               height="49"
               alt="MF - Groww"
             />
-            <p>Mutual Funds</p>
+            <p>Train AI</p>
           </a>
         </div>
         <div className="valign-wrapper">
@@ -47,7 +47,7 @@ const Header = () => {
               height="49"
               alt="MF - Groww"
             />
-            <p>Mutual Funds</p>
+            <p>Render Animation</p>
           </a>
           <a href="#">
             <img
@@ -56,7 +56,7 @@ const Header = () => {
               height="49"
               alt="MF - Groww"
             />
-            <p>Mutual Funds</p>
+            <p>Transcode</p>
           </a>
         </div>
         <div className="valign-wrapper">
@@ -67,7 +67,7 @@ const Header = () => {
               height="49"
               alt="MF - Groww"
             />
-            <p>Mutual Funds</p>
+            <p>Live Streaming</p>
           </a>
           <a href="#">
             <img
@@ -76,7 +76,7 @@ const Header = () => {
               height="49"
               alt="MF - Groww"
             />
-            <p>Mutual Funds</p>
+            <p>Earn by Providing</p>
           </a>
         </div>
       </motion.div>
