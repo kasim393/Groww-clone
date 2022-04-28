@@ -55,6 +55,28 @@
   border-radius: 4px;
   cursor: pointer;
 }
+.navbar-btn {
+  font-size: 16px;
+  background: var(--primaryClr);
+  color: var(--primaryBg);
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 8px 10px;
+}
+.navbar-btn a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: inherit;
+  text-decoration: none;
+}
+.navbar-btn p {
+  padding: 0 !important;
+}
+.navbar-btn img {
+  width: 20px;
+}
 /* mobie menu */
 .navbar-mobile-menu {
   display: flex;
@@ -162,7 +184,7 @@
   .navbar-input-card {
     display: none;
   }
-  .navbar-item button {
+  .navbar-item .navbar-btn {
     display: none;
   }
   .navbar {

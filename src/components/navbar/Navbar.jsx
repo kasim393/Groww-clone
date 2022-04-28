@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./navbar.css";
+import github from "../../assets/github.png";
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -33,7 +34,12 @@ const Navbar = () => {
             />
           </div>
           <div>
-            <button>Go to Dashboard</button>
+            <div className="navbar-btn">
+              <a href="#">
+                <img src={github} width="25px" alt="" />
+                <p>Go to Github</p>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -82,7 +88,12 @@ const Navbar = () => {
                 </div>
                 <div className="mobile-login-div">
                   <p>The GPU EDGE</p>
-                  <button>Go to Dashboard</button>
+                  <div className="navbar-btn">
+                    <a href="#">
+                      <img src={github} width="25px" alt="" />
+                      <p>Go to Github</p>
+                    </a>
+                  </div>
                 </div>
               </div>
               <div className="mobile-menu-bottom">

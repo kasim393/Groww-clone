@@ -1,6 +1,8 @@
 import React from "react";
 import "./header.css";
 import { motion } from "framer-motion";
+import openai from "../../assets/openai.png";
+import podman from "../../assets/podman.png";
 const Header = () => {
   return (
     <div className="header web-align">
@@ -21,21 +23,11 @@ const Header = () => {
       >
         <div className="valign-wrapper">
           <a href="#">
-            <img
-              src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/mfHome.af668dea.svg"
-              width="49"
-              height="49"
-              alt="MF - Groww"
-            />
+            <img src={podman} width="49" height="49" alt="MF - Groww" />
             <p>Run Containers</p>
           </a>
           <a href="#">
-            <img
-              src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/stockHome.af2af225.svg"
-              width="49"
-              height="49"
-              alt="MF - Groww"
-            />
+            <img src={openai} width="49" height="49" alt="MF - Groww" />
             <p>Train AI</p>
           </a>
         </div>
