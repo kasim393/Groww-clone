@@ -1,8 +1,33 @@
 import React, { useState } from "react";
 import "./navbar.css";
-
+import github from "../../assets/github.png";
+import Data from "./Data";
+import NavbarBtn from "./NavbarBtn";
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
+  const [showSuggest, setShowSuggest] = useState(false);
+
+  const [item, setItem] = useState(Data);
+  const [text, setText] = useState("");
+  const menuItems = [...new Set(Data.map((Val) => Val.category))];
+
+  const filterItem = (curcat) => {
+    const newItem = Data.filter((newVal) => {
+      return newVal.category === curcat;
+    });
+    setItem(newItem);
+  };
+  const onChangeHandler = (text) => {
+    let matches = [];
+    if (text.length > 0) {
+      matches = Data.filter((data) => {
+        const regex = new RegExp(`${text}`, "gi");
+        return data.title.match(regex);
+      });
+    }
+    setItem(matches);
+    setText(text);
+  };
 
   return (
     <div className="navbar web-align">
@@ -21,7 +46,7 @@ const Navbar = () => {
               fill="currentColor"
               height="24"
               width="24"
-              class="pos-rel se27SeIcon se27SeSearch"
+              className="pos-rel se27SeIcon se27SeSearch"
             >
               <path d="M0 0h24v24H0z" fill="none"></path>
               <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
@@ -30,10 +55,44 @@ const Navbar = () => {
               type="text"
               className="navbar-search"
               placeholder="What are you looking for today?"
+              onMouseEnter={() => setShowSuggest(true)}
+              onChange={(e) => onChangeHandler(e.target.value)}
+              value={text}
             />
+            {showSuggest && (
+              <div
+                className="suggest-container"
+                onMouseLeave={() => setShowSuggest(false)}
+              >
+                <div className="suggest-top">
+                  <NavbarBtn
+                    filterItem={filterItem}
+                    setItem={setItem}
+                    menuItems={menuItems}
+                  />
+                </div>
+                <div className="suggest-bottom">
+                  <div className="suggest-bottom_list">
+                    {item.map((val) => (
+                      <>
+                        <div>
+                          <p>{val.title}</p>
+                          <p>{val.price}</p>
+                        </div>
+                      </>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
           <div>
-            <button>Login/Register</button>
+            <div className="navbar-btn">
+              <a href="#">
+                <img src={github} width="25px" alt="" />
+                <p>Go to Github</p>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -46,7 +105,7 @@ const Navbar = () => {
             fill="currentColor"
             height="24"
             width="24"
-            class="pos-rel se27SeIcon se27SeSearch"
+            className="pos-rel se27SeIcon se27SeSearch"
           >
             <path d="M0 0h24v24H0z" fill="none"></path>
             <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
@@ -59,7 +118,7 @@ const Navbar = () => {
             fill="currentColor"
             height="27"
             width="27"
-            class="rsl1IconClass"
+            className="rsl1IconClass"
           >
             <path d="M0 0h24v24H0z" fill="none"></path>
             <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
@@ -81,24 +140,29 @@ const Navbar = () => {
                   />
                 </div>
                 <div className="mobile-login-div">
-                  <p>Simple & Free Investing</p>
-                  <button>Login/Register</button>
+                  <p>The GPU EDGE</p>
+                  <div className="navbar-btn">
+                    <a href="#">
+                      <img src={github} width="25px" alt="" />
+                      <p>Go to Github</p>
+                    </a>
+                  </div>
                 </div>
               </div>
               <div className="mobile-menu-bottom">
                 <div className="mobile-menu-item">
-                  <p>Filter Stocks</p>
-                  <p>Filter Mutual Funds</p>
-                  <p>Filter US Stocks</p>
+                  <p>Placeholder 1</p>
+                  <p>Placeholder 2</p>
+                  <p>Placeholder 3</p>
                 </div>
                 <div className="mobile-divider"></div>
                 <div className="mobile-menu-item">
-                  <p>Smart Save</p>
-                  <p>Compare Funds</p>
+                  <p>Placeholder 11</p>
+                  <p>Placeholder 12</p>
                 </div>
                 <div className="mobile-divider"></div>
                 <div className="mobile-menu-item">
-                  <p>View in App</p>
+                  <p>Placeholder 21</p>
                   <p>Help and Support</p>
                 </div>
                 <div className="mobile-divider"></div>
