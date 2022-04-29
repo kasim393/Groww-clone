@@ -109,6 +109,11 @@
 .button-footer-app img {
   width: 25px;
 }
+.discord_icon {
+  background-color: white;
+  border-radius: 50%;
+  padding: 4px;
+}
 
 @media screen and (max-width: 910px) {
   .footer-list {

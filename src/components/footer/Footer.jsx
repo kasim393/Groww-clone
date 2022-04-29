@@ -3,6 +3,7 @@ import "./footer.css";
 import windows_logo from "../../assets/windows_logo.png";
 import linux from "../../assets/linux.png";
 import github from "../../assets/github.png";
+import discord from "../../assets/discord.png";
 const Footer = () => {
   return (
     <div className="footer ">
@@ -55,6 +56,9 @@ const Footer = () => {
                     src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/telegram_icon_groww.f6524497.svg"
                     alt=""
                   />
+                </a>
+                <a href="#" target="_blank">
+                  <img src={discord} alt="" className="discord_icon" />
                 </a>
               </div>
             </div>
