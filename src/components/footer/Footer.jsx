@@ -57,7 +57,7 @@ const Footer = () => {
                     alt=""
                   />
                 </a>
-                <a href="#" target="_blank">
+                <a href="https://discord.gg/jjBSjSF" target="_blank">
                   <img src={discord} alt="" className="discord_icon" />
                 </a>
               </div>

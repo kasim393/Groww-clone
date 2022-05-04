@@ -11,9 +11,9 @@ const Header = () => {
           Offload <span></span>
         </h1>
         <p>
-          Trusted by <b>(currently) a few</b> humans. Start on the edge today.
+          The power of a <b>supercomputer</b> in your hands. Scroll down for more information.
         </p>
-        <button>Get Started</button>
+        <button>Learn More</button>
       </div>
       <motion.div
         className="right-header"

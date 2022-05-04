@@ -1,22 +1,10 @@
 const Data = [
   {
     id: "1",
-    title: "Node earning",
-    category: "Node",
-    price: "$10",
-  },
-
-  {
-    id: "2",
-    title: "GPU earning",
-    category: "GPU",
-    price: "$100",
-  },
-  {
-    id: "3",
-    title: "WSL2 earning",
-    category: "WSL2",
-    price: "$200",
+    title: "142.116.42.105:8080",
+    category: "Online",
+    //price: "(CPU: 40/40) (RAM: 128/128G) (GPU: 4/4)",
+    price: "(CPU: 40 | RAM: 128G | GPU: 4)",
   },
 ];
 

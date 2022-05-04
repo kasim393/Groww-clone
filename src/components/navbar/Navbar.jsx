@@ -54,7 +54,7 @@ const Navbar = () => {
             <input
               type="text"
               className="navbar-search"
-              placeholder="What are you looking for today?"
+              placeholder="Find your node"
               onMouseEnter={() => setShowSuggest(true)}
               onChange={(e) => onChangeHandler(e.target.value)}
               value={text}
@@ -76,7 +76,7 @@ const Navbar = () => {
                     {item.map((val) => (
                       <>
                         <div>
-                          <p>{val.title}</p>
+                          <p><a href={`http://${val.title}/`} target="_blank">{val.title}</a></p>
                           <p>{val.price}</p>
                         </div>
                       </>
@@ -90,7 +90,7 @@ const Navbar = () => {
             <div className="navbar-btn">
               <a href="#">
                 <img src={github} width="25px" alt="" />
-                <p>Go to Github</p>
+                <p>Go to Node</p>
               </a>
             </div>
           </div>
@@ -142,7 +142,7 @@ const Navbar = () => {
                 <div className="mobile-login-div">
                   <p>The GPU EDGE</p>
                   <div className="navbar-btn">
-                    <a href="#">
+                    <a href="https://github.com/gpuedge">
                       <img src={github} width="25px" alt="" />
                       <p>Go to Github</p>
                     </a>

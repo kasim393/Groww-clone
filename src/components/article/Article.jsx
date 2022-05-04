@@ -32,7 +32,7 @@ const Article = () => {
           />
           <p>Henry - Operations
             <br/> Meet him in Hefei
-            <br/><a href="https://www.linkedin.com/in/anna-polishchuk-b671401b7" target="_blank">WeChat</a>
+            <br/><a href="weixin://dl/chat?henryduolaimifa" target="_blank">WeChat</a>
           </p>
         </div>
       </div>

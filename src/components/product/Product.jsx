@@ -5,6 +5,7 @@ import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import "./product.css";
+import RL_AI from "../../assets/rl_ai.gif";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -74,7 +75,7 @@ const Product = () => {
               <div>
                 <img
                   class="ProductImg "
-                  src="https://assets-netstorage.groww.in/web-assets/nbg_mobile/prod/build/client/images/stocksImg.37ac1f11.png"
+                  src={RL_AI}
                   alt="stocks"
                 />
               </div>
