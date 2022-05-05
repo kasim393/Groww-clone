@@ -30,8 +30,8 @@
   border-radius: 8px;
   display: flex;
   align-items: center;
-  margin-right: 5rem;
-  width: 443px;
+  margin-inline: 2rem;
+  width: 100%;
 }
 .navbar-item .navbar-search {
   border: none;
@@ -43,7 +43,9 @@
   border: none;
   background: transparent;
 }
-
+.navbar-container {
+  width: 100%;
+}
 .suggest-container {
   max-height: 500px;
   overflow-y: auto;
@@ -107,6 +109,7 @@
   border-radius: 4px;
   cursor: pointer;
   padding: 8px 10px;
+  width: max-content;
 }
 .navbar-btn a {
   display: flex;

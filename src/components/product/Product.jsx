@@ -63,6 +63,7 @@ const Product = () => {
                 sx={{ borderBottom: "#00d09c" }}
                 label={`AI`}
                 {...a11yProps(0)}
+                id="AI"
               />
               <Tab label="Render" {...a11yProps(1)} />
               <Tab label="Transcode" {...a11yProps(2)} />
@@ -84,9 +85,9 @@ const Product = () => {
                     Zero<span class="MainPara">interruption</span>
                   </div>
                   <div class="Para">
-                    Scale training of your neural net. 
-                    Easily upload your dataset or run a graphical game + setup a RL environment. 
-                    No spot interruption.
+                    Scale training of your neural net. Easily upload your
+                    dataset or run a graphical game + setup a RL environment. No
+                    spot interruption.
                   </div>
                   <button className="product-btn">Explore AI</button>
                 </div>
@@ -106,7 +107,8 @@ const Product = () => {
                     0%<span class="MainPara">lost time</span>
                   </div>
                   <div class="Para">
-                    Cluster render your Blender, Maya and other work loads. Parallelize up to 1000 GPUs.
+                    Cluster render your Blender, Maya and other work loads.
+                    Parallelize up to 1000 GPUs.
                   </div>
                   <button className="product-btn">Explore Rendering</button>
                 </div>
@@ -146,7 +148,8 @@ const Product = () => {
                     100%<span class="MainPara">uptime</span>
                   </div>
                   <div class="Para">
-                    Offload your live streams to our edge and transcode + serve media directly.
+                    Offload your live streams to our edge and transcode + serve
+                    media directly.
                   </div>
                   <button className="product-btn">
                     Explore Live Streaming

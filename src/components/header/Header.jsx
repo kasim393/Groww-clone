@@ -13,7 +13,9 @@ const Header = () => {
         <p>
           Trusted by <b>(currently) a few</b> humans. Start on the edge today.
         </p>
-        <button>Get Started</button>
+        <button onClick={() => window.location.replace("/#AI")}>
+          Get Started
+        </button>
       </div>
       <motion.div
         className="right-header"
