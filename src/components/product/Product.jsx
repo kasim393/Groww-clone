@@ -50,7 +50,7 @@ const Product = () => {
       <div class="product_chip">
         <span class="">OUR PRODUCTS</span>
       </div>
-      <h2 class="product_heading">Your money. Your choice.</h2>
+      <h2 class="product_heading">Your workload. Your choice.</h2>
       <div className="tab-container">
         <Box sx={{ width: "100%" }}>
           <Box>
@@ -61,12 +61,13 @@ const Product = () => {
             >
               <Tab
                 sx={{ borderBottom: "#00d09c" }}
-                label={`Stocks`}
+                label={`AI`}
                 {...a11yProps(0)}
+                id="AI"
               />
-              <Tab label="Mutual Funds" {...a11yProps(1)} />
-              <Tab label="US Stocks" {...a11yProps(2)} />
-              <Tab label="FDs" {...a11yProps(3)} />
+              <Tab label="Render" {...a11yProps(1)} />
+              <Tab label="Transcode" {...a11yProps(2)} />
+              <Tab label="Live" {...a11yProps(3)} />
             </Tabs>
           </Box>
           <TabPanel value={value} index={0}>
@@ -81,13 +82,14 @@ const Product = () => {
               <div className="tab-right">
                 <div>
                   <div class="MainText">
-                    Zero<span class="MainPara">account charges</span>
+                    Zero<span class="MainPara">interruption</span>
                   </div>
                   <div class="Para">
-                    You don’t have to pay a single rupee for opening a stocks
-                    account or account maintenance.
+                    Scale training of your neural net. Easily upload your
+                    dataset or run a graphical game + setup a RL environment. No
+                    spot interruption.
                   </div>
-                  <button className="product-btn">Explore Stocks</button>
+                  <button className="product-btn">Explore AI</button>
                 </div>
               </div>
             </div>
@@ -102,13 +104,13 @@ const Product = () => {
               <div className="tab-right">
                 <div>
                   <div class="MainText">
-                    0%<span class="MainPara">commision</span>
+                    0%<span class="MainPara">lost time</span>
                   </div>
                   <div class="Para">
-                    Select from 5000+ direct mutual funds and get higher return
-                    than regular funds.
+                    Cluster render your Blender, Maya and other work loads.
+                    Parallelize up to 1000 GPUs.
                   </div>
-                  <button className="product-btn">Explore Mutual Funds</button>
+                  <button className="product-btn">Explore Rendering</button>
                 </div>
               </div>
             </div>
@@ -123,13 +125,12 @@ const Product = () => {
               <div className="tab-right">
                 <div>
                   <div class="MainText">
-                    Free<span class="MainPara">account opening</span>
+                    Free<span class="MainPara">up to 1080p</span>
                   </div>
                   <div class="Para">
-                    Invest in Apple, Google, Netflix and many more US companies
-                    that you love without any brokerage fee.
+                    Transcode your content into HLS and other formats.
                   </div>
-                  <button className="product-btn">Explore US Stocks</button>
+                  <button className="product-btn">Explore Transcode</button>
                 </div>
               </div>
             </div>
@@ -144,14 +145,14 @@ const Product = () => {
               <div className="tab-right">
                 <div>
                   <div class="MainText">
-                    6.7%<span class="MainPara">interest rate</span>
+                    100%<span class="MainPara">uptime</span>
                   </div>
                   <div class="Para">
-                    Open fixed deposits in any bank with higher interest rates
-                    without opening a bank account.
+                    Offload your live streams to our edge and transcode + serve
+                    media directly.
                   </div>
                   <button className="product-btn">
-                    Explore Fixed Deposits
+                    Explore Live Streaming
                   </button>
                 </div>
               </div>

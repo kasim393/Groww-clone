@@ -84,7 +84,7 @@
   10% {
     font-size: 100%;
     opacity: 1;
-    content: "Stocks";
+    content: "Containers";
   }
   20% {
     font-size: 100%;
@@ -93,7 +93,7 @@
   30% {
     font-size: 100%;
     opacity: 1;
-    content: "Mutual Funds";
+    content: "AI";
   }
   40% {
     font-size: 100%;
@@ -102,7 +102,7 @@
   50% {
     font-size: 100%;
     opacity: 1;
-    content: "Futures & Options";
+    content: "Rendering";
   }
   60% {
     font-size: 100%;
@@ -111,7 +111,7 @@
   70% {
     font-size: 100%;
     opacity: 1;
-    content: "US Stocks";
+    content: "Transcode";
   }
   80% {
     font-size: 100%;
@@ -120,7 +120,7 @@
   90% {
     font-size: 100%;
     opacity: 1;
-    content: "IPO";
+    content: "Live Streaming";
   }
   100% {
     font-size: 100%;
