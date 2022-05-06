@@ -13,7 +13,9 @@ const Header = () => {
         <p>
           The power of a <b>supercomputer</b> in your hands. Scroll down for more information.
         </p>
-        <button>Learn More</button>
+        <button onClick={() => window.location.replace("/#WORK_TYPES")}>
+          Learn More
+        </button>
       </div>
       <motion.div
         className="right-header"
