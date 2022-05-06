@@ -43,7 +43,7 @@ const Header = () => {
           </a>
           <a href="#">
             <img
-              src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/usHome.fcb18f99.svg"
+              src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/fdHome.ba2c5441.svg"
               width="49"
               height="49"
               alt="MF - Groww"
@@ -63,7 +63,7 @@ const Header = () => {
           </a>
           <a href="#">
             <img
-              src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/fdHome.ba2c5441.svg"
+              src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/usHome.fcb18f99.svg"
               width="49"
               height="49"
               alt="MF - Groww"
