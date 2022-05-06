@@ -5,6 +5,10 @@ import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import "./product.css";
+import RL_AI from "../../assets/rl_ai.gif";
+import RENDER_FARM from "../../assets/render_farm.png";
+import TRANSCODE from "../../assets/transcode.jpeg";
+import LIVE from "../../assets/live.jpg";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -48,7 +52,7 @@ const Product = () => {
   return (
     <div className="product_section web-align">
       <div class="product_chip">
-        <span class="">OUR PRODUCTS</span>
+        <span class="">WORK TYPES</span>
       </div>
       <h2 class="product_heading">Your workload. Your choice.</h2>
       <div className="tab-container">
@@ -74,7 +78,7 @@ const Product = () => {
               <div>
                 <img
                   class="ProductImg "
-                  src="https://assets-netstorage.groww.in/web-assets/nbg_mobile/prod/build/client/images/stocksImg.37ac1f11.png"
+                  src={RL_AI}
                   alt="stocks"
                 />
               </div>
@@ -97,8 +101,9 @@ const Product = () => {
             <div class="valign-wrapper">
               <img
                 class="ProductImg "
-                src="https://assets-netstorage.groww.in/web-assets/nbg_mobile/prod/build/client/images/mfImg.db19e475.png"
+                src={RENDER_FARM}
                 alt="stocks"
+                style={{width: "360px"}}
               />
               <div className="tab-right">
                 <div>
@@ -117,8 +122,9 @@ const Product = () => {
             <div class="valign-wrapper">
               <img
                 class="ProductImg "
-                src="https://assets-netstorage.groww.in/web-assets/nbg_mobile/prod/build/client/images/usStocksImg.1a3568c2.png"
+                src={TRANSCODE}
                 alt="stocks"
+                style={{width: "360px"}}
               />
               <div className="tab-right">
                 <div>
@@ -137,8 +143,9 @@ const Product = () => {
             <div class="valign-wrapper">
               <img
                 class="ProductImg "
-                src="https://assets-netstorage.groww.in/web-assets/nbg_mobile/prod/build/client/images/fdImg.b51bb09b.png"
+                src={LIVE}
                 alt="stocks"
+                style={{width: "360px"}}
               />
               <div className="tab-right">
                 <div>

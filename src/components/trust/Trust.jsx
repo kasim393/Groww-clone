@@ -7,7 +7,7 @@ const Trust = () => {
         <div className="left-trust">
           <div class="TextWrapper">
             <div class="Heading">Trusted by</div>
-            <div class="Heading">(currently) a few users</div>
+            <div class="Heading">users</div>
             <div class="Para">
               Our cutting-edge reputation system ensures that your peers
               provide quality and secure service.

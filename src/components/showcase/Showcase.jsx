@@ -1,5 +1,9 @@
 import React from "react";
 import "./showcase.css";
+import server2 from "../../assets/server2.svg";
+import cpu from "../../assets/cpu.svg";
+import { BsArrowRight } from "react-icons/bs";
+
 const Showcase = () => {
   return (
     <div className="showcase web-align">
@@ -9,7 +13,8 @@ const Showcase = () => {
             <div class="MainText">Connect your GPUs</div>
             <div class="MainText">and earn</div>
             <div class="Para">
-              As long as you have Windows (/w WSL2) or Linux you can farm out your hardware.
+              As long as you have Windows (/w WSL2) or Linux you can farm out
+              your hardware.
             </div>
             <div class="BotWrapper">
               <div class="valign-wrapper">
@@ -42,8 +47,8 @@ const Showcase = () => {
                 <div>
                   <div class="botwrapper-head">Always in Sync</div>
                   <div class="botwrapper-para">
-                    GPUx will take care of providing your hardware work so you focus
-                    on infrastructure.
+                    GPUx will take care of providing your hardware work so you
+                    focus on infrastructure.
                   </div>
                 </div>
               </div>
@@ -51,25 +56,34 @@ const Showcase = () => {
           </div>
           <div className="showcase-top_right">
             <div className="top-right_two">
-              <div>
-                <img
-                  src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/ios.0a99dcbb.png"
-                  alt=""
-                />
+              <div className="showcase_server">
+                <img src={server2} alt="" />
+                <div>
+                  <p>WSL2</p>
+                  <BsArrowRight />
+                </div>
               </div>
-              <div style={{ marginTop: "30px" }}>
-                <img
-                  src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/android.6dfb12ca.png"
-                  alt=""
-                />
-              </div>
+              {/* <div
+                style={{ marginTop: "30px", backgroundColor: "#66e3c4" }}
+                className="showcase_server"
+              >
+                <img src={cpu} alt="" />
+                <div>
+                  <p>Linux</p>
+                  <BsArrowRight />
+                </div>
+              </div> */}
             </div>
             <div className="top-right_one">
-              <div>
-                <img
-                  src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/web.634ac717.png"
-                  alt=""
-                />
+              <div
+                style={{ backgroundColor: "#66e3c4" }}
+                className="showcase_server"
+              >
+                <img src={cpu} alt="" />
+                <div>
+                  <p>Linux</p>
+                  <BsArrowRight />
+                </div>
               </div>
             </div>
           </div>
@@ -81,10 +95,15 @@ const Showcase = () => {
           <div class="heading">We’re with you, at every step.</div>
           <div class="para">
             For any query you have, find the answer quickly on our Help &amp;
-            Support. Need a little more help? We’re happy to talk in person or via chat.
+            Support. Need a little more help? We’re happy to talk in person or
+            via chat.
           </div>
           <div>
-            <button><p href="https://discord.com/invite/jjBSjSF" target="_blank">Get In Touch</p></button>
+            <button>
+              <p href="https://discord.com/invite/jjBSjSF" target="_blank">
+                Get In Touch
+              </p>
+            </button>
           </div>
         </div>
         <div className="banner-right">

@@ -1,6 +1,8 @@
 import React from "react";
 import "./header.css";
 import { motion } from "framer-motion";
+import openai from "../../assets/openai.png";
+import podman from "../../assets/podman.png";
 const Header = () => {
   return (
     <div className="header web-align">
@@ -9,9 +11,9 @@ const Header = () => {
           Offload <span></span>
         </h1>
         <p>
-          Trusted by <b>(currently) a few</b> humans. Start on the edge today.
+          The power of a <b>supercomputer</b> in your hands. Scroll down for more information.
         </p>
-        <button>Get Started</button>
+        <button>Learn More</button>
       </div>
       <motion.div
         className="right-header"
@@ -21,21 +23,11 @@ const Header = () => {
       >
         <div className="valign-wrapper">
           <a href="#">
-            <img
-              src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/mfHome.af668dea.svg"
-              width="49"
-              height="49"
-              alt="MF - Groww"
-            />
+            <img src={podman} width="49" height="49" alt="MF - Groww" />
             <p>Run Containers</p>
           </a>
           <a href="#">
-            <img
-              src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/stockHome.af2af225.svg"
-              width="49"
-              height="49"
-              alt="MF - Groww"
-            />
+            <img src={openai} width="49" height="49" alt="MF - Groww" />
             <p>Train AI</p>
           </a>
         </div>
@@ -51,7 +43,7 @@ const Header = () => {
           </a>
           <a href="#">
             <img
-              src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/usHome.fcb18f99.svg"
+              src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/fdHome.ba2c5441.svg"
               width="49"
               height="49"
               alt="MF - Groww"
@@ -71,7 +63,7 @@ const Header = () => {
           </a>
           <a href="#">
             <img
-              src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/fdHome.ba2c5441.svg"
+              src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/usHome.fcb18f99.svg"
               width="49"
               height="49"
               alt="MF - Groww"
