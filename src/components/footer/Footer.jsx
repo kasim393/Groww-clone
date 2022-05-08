@@ -4,6 +4,7 @@ import windows_logo from "../../assets/windows_logo.png";
 import linux from "../../assets/linux.png";
 import github from "../../assets/github.png";
 import discord from "../../assets/discord.png";
+import github_footer from "../../assets/github_footer.png";
 const Footer = () => {
   return (
     <div className="footer ">
@@ -59,6 +60,9 @@ const Footer = () => {
                 </a>
                 <a href="https://discord.gg/jjBSjSF" target="_blank">
                   <img src={discord} alt="" className="discord_icon" />
+                </a>
+                <a href="https://github.com/gpuedge/landing" target="_blank">
+                  <img src={github_footer} alt="" className="discord_icon" />
                 </a>
               </div>
             </div>
