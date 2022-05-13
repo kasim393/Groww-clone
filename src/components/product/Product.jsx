@@ -88,7 +88,7 @@ const Product = () => {
                     Zero<span class="MainPara">interruption</span>
                   </div>
                   <div class="Para">
-                    Scale training of your neural net. Easily upload your 
+                    Distributed learning for your neural net. Easily upload your 
                     dataset or run a graphical game + setup a RL environment. No 
                     spot interruption.
                   </div>
@@ -112,7 +112,7 @@ const Product = () => {
                   </div>
                   <div class="Para">
                     Cluster render your Blender, Maya and other work loads. 
-                    Parallelize up to 1000 GPUs.
+                    Parallelize up to 1000 GPUs. Your own on-demand render farm.
                   </div>
                   <button className="product-btn">Explore Rendering</button>
                 </div>

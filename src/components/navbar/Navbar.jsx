@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./navbar.css";
 import github from "../../assets/github.png";
+import LOGO1 from "../../assets/logo1.png";
+import LOGO2 from "../../assets/logo2.png";
 import Data from "./Data";
 import NavbarBtn from "./NavbarBtn";
 const Navbar = () => {
@@ -28,12 +30,12 @@ const Navbar = () => {
     setItem(matches);
     setText(text);
   };
-
+//"https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/logo-dark-groww.83f43714.svg"
   return (
     <div className="navbar web-align">
       <div className="navbar-item">
         <img
-          src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/logo-dark-groww.83f43714.svg"
+          src={Math.random() >= 0.88 ? LOGO1 : LOGO2}
           alt=""
         />
       </div>
