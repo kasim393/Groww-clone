@@ -15,11 +15,11 @@ const Home = () => {
       <Navbar />
       <Header />
       <Product />
-      <Trust />
+      <Showcase />
+      {/*<Trust />*/}
       <Article />
       <Press />
       <Test />
-      <Showcase />
       <Footer />
     </>
   );

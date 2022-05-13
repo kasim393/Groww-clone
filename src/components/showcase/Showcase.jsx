@@ -56,7 +56,7 @@ const Showcase = () => {
           </div>
           <div className="showcase-top_right">
             <div className="top-right_two">
-              <div className="showcase_server">
+              <div className="showcase_server" onClick={()=> window.location = "https://github.com/gpuedge/farm/releases"}>
                 <img src={server2} alt="" />
                 <div>
                   <p>WSL2</p>
@@ -78,6 +78,7 @@ const Showcase = () => {
               <div
                 style={{ backgroundColor: "#66e3c4" }}
                 className="showcase_server"
+                onClick={()=> window.location = "https://github.com/gpuedge/farm/releases"}
               >
                 <img src={cpu} alt="" />
                 <div>
@@ -92,18 +93,19 @@ const Showcase = () => {
       </div>
       <div className="showcase-banner">
         <div className="banner-left">
-          <div class="heading">We’re with you, at every step.</div>
+          <div class="heading">We’re with you.</div>
           <div class="para">
-            For any query you have, find the answer quickly on our Help &amp;
-            Support. Need a little more help? We’re happy to talk in person or
+            Need a little more help? We’re happy to talk in person or
             via chat.
           </div>
           <div>
+          <a href="https://discord.com/invite/jjBSjSF" target="_blank">
             <button>
               <p href="https://discord.com/invite/jjBSjSF" target="_blank">
                 Get In Touch
               </p>
             </button>
+          </a>
           </div>
         </div>
         <div className="banner-right">

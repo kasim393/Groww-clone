@@ -103,25 +103,25 @@ const Footer = () => {
           </div>
           <div className="footer-store">
             <div className="button-footer-app">
-              <a href="#">
+              <a href="https://github.com/gpuedge/farm/releases" target="_blank">
                 <img src={windows_logo} alt="" />
                 <div>
-                  <p>GET IT ON</p>
+                  <p>EARN ON</p>
                   <h1>WINDOWS 10</h1>
                 </div>
               </a>
             </div>
             <div className="button-footer-app">
-              <a href="#">
+              <a href="https://github.com/gpuedge/farm/releases" target="_blank">
                 <img src={linux} alt="" />
                 <div>
-                  <p>GET IT ON</p>
+                  <p>EARN ON</p>
                   <h1>LINUX OS</h1>
                 </div>
               </a>
             </div>
             <div className="button-footer-app">
-              <a href="#">
+              <a href="https://github.com/gpuedge" target="_blank">
                 <img src={github} alt="" />
                 <div>
                   <p>GET IT ON</p>
