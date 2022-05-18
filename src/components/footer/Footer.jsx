@@ -5,6 +5,7 @@ import linux from "../../assets/linux.png";
 import github from "../../assets/github.png";
 import discord from "../../assets/discord.png";
 import github_footer from "../../assets/github_footer.png";
+import LOGO1 from "../../assets/logo1.png";
 const Footer = () => {
   return (
     <div className="footer ">
@@ -13,7 +14,7 @@ const Footer = () => {
           <div className="footer-list">
             <div className="footer-list-left">
               <img
-                src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/logo-light-groww.1815ad63.svg"
+                src={LOGO1}
                 alt=""
                 className="footer-logo"
               />

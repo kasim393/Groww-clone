@@ -1,5 +1,9 @@
 import React from "react";
+import ANNIE from "../../assets/1647559287559.jpeg";
+import IVAN from "../../assets/1652316097723.jpeg";
+import HENRY from "../../assets/IMG_1906.png";
 import "./article.css";
+
 const Article = () => {
   return (
     <div className="article_section web-align">
@@ -7,7 +11,9 @@ const Article = () => {
       <div className="card-container">
         <div className="card-wrapper">
           <img
-            src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/blog1.d3a78143.png"
+            style={{borderRadius: "10%"}}
+            width={260}
+            src={ANNIE}
             alt=""
           />
           <p>Annie - Marketing 
@@ -17,7 +23,9 @@ const Article = () => {
         </div>
         <div className="card-wrapper">
           <img
-            src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/blog2.2eea33cc.png"
+            style={{borderRadius: "10%"}}
+            width={260}
+            src={IVAN}
             alt=""
           />
           <p>Ivan - Tech
@@ -27,7 +35,9 @@ const Article = () => {
         </div>
         <div className="card-wrapper">
           <img
-            src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/blog3.5bbd4db3.png"
+            style={{borderRadius: "10%"}}
+            width={260}
+            src={HENRY}
             alt=""
           />
           <p>Henry - Operations
