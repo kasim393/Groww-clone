@@ -1,34 +1,55 @@
 import React from "react";
+import ANNIE from "../../assets/1647559287559.jpeg";
+import IVAN from "../../assets/1652316097723.jpeg";
+import HENRY from "../../assets/IMG_1906.png";
 import "./article.css";
+
 const Article = () => {
   return (
     <div className="article_section web-align">
-      <div className="heading">Keep learning. Keep growing.</div>
+      <div className="heading">Meet our Team</div>
       <div className="card-container">
         <div className="card-wrapper">
           <img
-            src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/blog1.d3a78143.png"
+            style={{borderRadius: "10%"}}
+            width={260}
+            src={ANNIE}
             alt=""
           />
-          <p>How to Select/Pick Stocks for Intraday</p>
+          <p>Annie - Marketing 
+            <br/> Meet her in Krakow
+            <br/><a href="https://www.linkedin.com/in/anna-polishchuk-b671401b7" target="_blank">LinkedIn</a>
+          </p>
         </div>
         <div className="card-wrapper">
           <img
-            src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/blog2.2eea33cc.png"
+            style={{borderRadius: "10%"}}
+            width={260}
+            src={IVAN}
             alt=""
           />
-          <p>Beginners Guide to Mutual Funds</p>
+          <p>Ivan - Tech
+            <br/> Meet him in Toronto
+            <br/><a href="https://www.linkedin.com/in/ivan-svirid/" target="_blank">LinkedIn</a>
+          </p>
         </div>
         <div className="card-wrapper">
           <img
-            src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/blog3.5bbd4db3.png"
+            style={{borderRadius: "10%"}}
+            width={260}
+            src={HENRY}
             alt=""
           />
-          <p>How to Diversify in the Time of Market Volatility</p>
+          <p>Henry - Operations
+            <br/> Meet him in Hefei
+            <br/><a href="weixin://dl/chat?henryduolaimifa" target="_blank">WeChat</a>
+          </p>
         </div>
       </div>
       <div className="view-article">
-        <span>View all articles</span>
+        <br/>
+        <br/>
+        <span>View all team</span>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"

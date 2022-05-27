@@ -1,17 +1,21 @@
 import React from "react";
 import "./header.css";
 import { motion } from "framer-motion";
+import openai from "../../assets/openai.png";
+import podman from "../../assets/podman.png";
 const Header = () => {
   return (
     <div className="header web-align">
       <div className="left-header">
         <h1>
-          Invest in <span></span>
+          Offload <span></span>
         </h1>
         <p>
-          Trusted by <b>Millions</b> of Indians. Start investing today.
+          The power of a <b>supercomputer</b> in your hands. Scroll down for more information.
         </p>
-        <button>Get Started</button>
+        <button onClick={() => window.location.replace("/#WORK_TYPES")}>
+          Learn More
+        </button>
       </div>
       <motion.div
         className="right-header"
@@ -21,22 +25,12 @@ const Header = () => {
       >
         <div className="valign-wrapper">
           <a href="#">
-            <img
-              src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/mfHome.af668dea.svg"
-              width="49"
-              height="49"
-              alt="MF - Groww"
-            />
-            <p>Mutual Funds</p>
+            <img src={podman} width="49" height="49" alt="MF - Groww" />
+            <p>Run Containers</p>
           </a>
           <a href="#">
-            <img
-              src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/stockHome.af2af225.svg"
-              width="49"
-              height="49"
-              alt="MF - Groww"
-            />
-            <p>Mutual Funds</p>
+            <img src={openai} width="49" height="49" alt="MF - Groww" />
+            <p>Train AI</p>
           </a>
         </div>
         <div className="valign-wrapper">
@@ -47,16 +41,16 @@ const Header = () => {
               height="49"
               alt="MF - Groww"
             />
-            <p>Mutual Funds</p>
+            <p>Render Animation</p>
           </a>
           <a href="#">
             <img
-              src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/usHome.fcb18f99.svg"
+              src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/fdHome.ba2c5441.svg"
               width="49"
               height="49"
               alt="MF - Groww"
             />
-            <p>Mutual Funds</p>
+            <p>Transcode</p>
           </a>
         </div>
         <div className="valign-wrapper">
@@ -67,16 +61,16 @@ const Header = () => {
               height="49"
               alt="MF - Groww"
             />
-            <p>Mutual Funds</p>
+            <p>Live Streaming</p>
           </a>
           <a href="#">
             <img
-              src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/fdHome.ba2c5441.svg"
+              src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/usHome.fcb18f99.svg"
               width="49"
               height="49"
               alt="MF - Groww"
             />
-            <p>Mutual Funds</p>
+            <p>Earn by Providing</p>
           </a>
         </div>
       </motion.div>

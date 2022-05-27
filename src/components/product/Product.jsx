@@ -5,6 +5,11 @@ import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import "./product.css";
+import RL_AI from "../../assets/rl_ai.gif";
+import RENDER_FARM from "../../assets/render_farm.png";
+import TRANSCODE from "../../assets/transcode.jpeg";
+import LIVE from "../../assets/live.jpg";
+import { Link } from "react-router-dom";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -48,9 +53,11 @@ const Product = () => {
   return (
     <div className="product_section web-align">
       <div class="product_chip">
-        <span class="">OUR PRODUCTS</span>
+        <span id="WORK_TYPES" class="">
+          WORK TYPES
+        </span>
       </div>
-      <h2 class="product_heading">Your money. Your choice.</h2>
+      <h2 class="product_heading">Your workload. Your choice.</h2>
       <div className="tab-container">
         <Box sx={{ width: "100%" }}>
           <Box>
@@ -61,33 +68,32 @@ const Product = () => {
             >
               <Tab
                 sx={{ borderBottom: "#00d09c" }}
-                label={`Stocks`}
+                label={`AI`}
                 {...a11yProps(0)}
               />
-              <Tab label="Mutual Funds" {...a11yProps(1)} />
-              <Tab label="US Stocks" {...a11yProps(2)} />
-              <Tab label="FDs" {...a11yProps(3)} />
+              <Tab label="Render" {...a11yProps(1)} />
+              <Tab label="Transcode" {...a11yProps(2)} />
+              <Tab label="Live" {...a11yProps(3)} />
             </Tabs>
           </Box>
           <TabPanel value={value} index={0}>
             <div className="valign-wrapper">
               <div>
-                <img
-                  class="ProductImg "
-                  src="https://assets-netstorage.groww.in/web-assets/nbg_mobile/prod/build/client/images/stocksImg.37ac1f11.png"
-                  alt="stocks"
-                />
+                <img class="ProductImg " src={RL_AI} alt="stocks" />
               </div>
               <div className="tab-right">
                 <div>
                   <div class="MainText">
-                    Zero<span class="MainPara">account charges</span>
+                    Zero<span class="MainPara">interruption</span>
                   </div>
                   <div class="Para">
-                    You don’t have to pay a single rupee for opening a stocks
-                    account or account maintenance.
+                    Distributed learning for your neural net. Easily upload your
+                    dataset or run a graphical game + setup a RL environment. No
+                    spot interruption.
                   </div>
-                  <button className="product-btn">Explore Stocks</button>
+                  <Link to="/ai" className="Link-tag">
+                    <button className="product-btn">Explore AI</button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -96,19 +102,22 @@ const Product = () => {
             <div class="valign-wrapper">
               <img
                 class="ProductImg "
-                src="https://assets-netstorage.groww.in/web-assets/nbg_mobile/prod/build/client/images/mfImg.db19e475.png"
+                src={RENDER_FARM}
                 alt="stocks"
+                style={{ width: "360px" }}
               />
               <div className="tab-right">
                 <div>
                   <div class="MainText">
-                    0%<span class="MainPara">commision</span>
+                    0%<span class="MainPara">lost time</span>
                   </div>
                   <div class="Para">
-                    Select from 5000+ direct mutual funds and get higher return
-                    than regular funds.
+                    Cluster render your Blender, Maya and other work loads.
+                    Parallelize up to 1000 GPUs. Your own on-demand render farm.
                   </div>
-                  <button className="product-btn">Explore Mutual Funds</button>
+                  <Link to="/rendering" className="Link-tag">
+                    <button className="product-btn">Explore Rendering</button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -117,19 +126,21 @@ const Product = () => {
             <div class="valign-wrapper">
               <img
                 class="ProductImg "
-                src="https://assets-netstorage.groww.in/web-assets/nbg_mobile/prod/build/client/images/usStocksImg.1a3568c2.png"
+                src={TRANSCODE}
                 alt="stocks"
+                style={{ width: "360px" }}
               />
               <div className="tab-right">
                 <div>
                   <div class="MainText">
-                    Free<span class="MainPara">account opening</span>
+                    Free<span class="MainPara">up to 1080p</span>
                   </div>
                   <div class="Para">
-                    Invest in Apple, Google, Netflix and many more US companies
-                    that you love without any brokerage fee.
+                    Transcode your content into HLS and other formats.
                   </div>
-                  <button className="product-btn">Explore US Stocks</button>
+                  <Link to="/video-transcoding" className="Link-tag">
+                    <button className="product-btn">Explore Transcode</button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -138,21 +149,24 @@ const Product = () => {
             <div class="valign-wrapper">
               <img
                 class="ProductImg "
-                src="https://assets-netstorage.groww.in/web-assets/nbg_mobile/prod/build/client/images/fdImg.b51bb09b.png"
+                src={LIVE}
                 alt="stocks"
+                style={{ width: "360px" }}
               />
               <div className="tab-right">
                 <div>
                   <div class="MainText">
-                    6.7%<span class="MainPara">interest rate</span>
+                    100%<span class="MainPara">uptime</span>
                   </div>
                   <div class="Para">
-                    Open fixed deposits in any bank with higher interest rates
-                    without opening a bank account.
+                    Offload your live streams to our edge and transcode + serve
+                    media directly.
                   </div>
-                  <button className="product-btn">
-                    Explore Fixed Deposits
-                  </button>
+                  <Link to="/machine-learning" className="Link-tag">
+                    <button className="product-btn">
+                      Explore Live Streaming
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>

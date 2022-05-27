@@ -12,15 +12,15 @@ import Trust from "../../components/trust/Trust";
 const Home = () => {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <Header />
       <Product />
-      <Trust />
+      <Showcase />
+      {/*<Trust />*/}
       <Article />
       <Press />
       <Test />
-      <Showcase />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };
