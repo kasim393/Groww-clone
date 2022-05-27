@@ -12,7 +12,7 @@ import Trust from "../../components/trust/Trust";
 const Home = () => {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <Header />
       <Product />
       <Showcase />
@@ -20,7 +20,7 @@ const Home = () => {
       <Article />
       <Press />
       <Test />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

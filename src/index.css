@@ -131,3 +131,13 @@ select {
     padding: 0 1rem;
   }
 }
+.Link-tag {
+  width: unset !important;
+  height: unset !important;
+  background: unset !important;
+  box-shadow: unset !important;
+  border-radius: unset !important;
+  margin: unset !important;
+  padding: unset !important;
+  text-decoration: none;
+}

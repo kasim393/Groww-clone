@@ -5,6 +5,7 @@ import LOGO1 from "../../assets/logo1.png";
 import LOGO2 from "../../assets/logo2.png";
 import Data from "./Data";
 import NavbarBtn from "./NavbarBtn";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [showSuggest, setShowSuggest] = useState(false);
@@ -30,14 +31,13 @@ const Navbar = () => {
     setItem(matches);
     setText(text);
   };
-//"https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/logo-dark-groww.83f43714.svg"
+  //"https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/logo-dark-groww.83f43714.svg"
   return (
     <div className="navbar web-align">
       <div className="navbar-item">
-        <img
-          src={Math.random() >= 0.88 ? LOGO1 : LOGO2}
-          alt=""
-        />
+        <Link to="/">
+          <img src={Math.random() >= 0.88 ? LOGO1 : LOGO2} alt="" />
+        </Link>
       </div>
       <div className="navbar-container">
         <div className="navbar-item">
@@ -78,7 +78,11 @@ const Navbar = () => {
                     {item.map((val) => (
                       <>
                         <div>
-                          <p><a href={`${val.url}`} target="_blank">{val.title}</a></p>
+                          <p>
+                            <a href={`${val.url}`} target="_blank">
+                              {val.title}
+                            </a>
+                          </p>
                           <p>{val.price}</p>
                         </div>
                       </>
@@ -160,7 +164,9 @@ const Navbar = () => {
               </div>
               <div className="mobile-menu-bottom">
                 <div className="mobile-menu-item">
-                  <a href="https://node0.gpux.ai/" target="_blank"><p>Visit Node 0</p></a>
+                  <a href="https://node0.gpux.ai/" target="_blank">
+                    <p>Visit Node 0</p>
+                  </a>
                   <p>Placeholder 2</p>
                   <p>Placeholder 3</p>
                 </div>

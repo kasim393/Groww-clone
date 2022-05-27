@@ -1,0 +1,11 @@
+.machine-learning {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.machine-learning img {
+  width: 300px;
+}

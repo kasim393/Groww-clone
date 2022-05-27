@@ -9,6 +9,7 @@ import RL_AI from "../../assets/rl_ai.gif";
 import RENDER_FARM from "../../assets/render_farm.png";
 import TRANSCODE from "../../assets/transcode.jpeg";
 import LIVE from "../../assets/live.jpg";
+import { Link } from "react-router-dom";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -52,7 +53,9 @@ const Product = () => {
   return (
     <div className="product_section web-align">
       <div class="product_chip">
-        <span id="WORK_TYPES" class="">WORK TYPES</span>
+        <span id="WORK_TYPES" class="">
+          WORK TYPES
+        </span>
       </div>
       <h2 class="product_heading">Your workload. Your choice.</h2>
       <div className="tab-container">
@@ -76,11 +79,7 @@ const Product = () => {
           <TabPanel value={value} index={0}>
             <div className="valign-wrapper">
               <div>
-                <img
-                  class="ProductImg "
-                  src={RL_AI}
-                  alt="stocks"
-                />
+                <img class="ProductImg " src={RL_AI} alt="stocks" />
               </div>
               <div className="tab-right">
                 <div>
@@ -88,11 +87,13 @@ const Product = () => {
                     Zero<span class="MainPara">interruption</span>
                   </div>
                   <div class="Para">
-                    Distributed learning for your neural net. Easily upload your 
-                    dataset or run a graphical game + setup a RL environment. No 
+                    Distributed learning for your neural net. Easily upload your
+                    dataset or run a graphical game + setup a RL environment. No
                     spot interruption.
                   </div>
-                  <button className="product-btn">Explore AI</button>
+                  <Link to="/ai" className="Link-tag">
+                    <button className="product-btn">Explore AI</button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -103,7 +104,7 @@ const Product = () => {
                 class="ProductImg "
                 src={RENDER_FARM}
                 alt="stocks"
-                style={{width: "360px"}}
+                style={{ width: "360px" }}
               />
               <div className="tab-right">
                 <div>
@@ -111,10 +112,12 @@ const Product = () => {
                     0%<span class="MainPara">lost time</span>
                   </div>
                   <div class="Para">
-                    Cluster render your Blender, Maya and other work loads. 
+                    Cluster render your Blender, Maya and other work loads.
                     Parallelize up to 1000 GPUs. Your own on-demand render farm.
                   </div>
-                  <button className="product-btn">Explore Rendering</button>
+                  <Link to="/rendering" className="Link-tag">
+                    <button className="product-btn">Explore Rendering</button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -125,7 +128,7 @@ const Product = () => {
                 class="ProductImg "
                 src={TRANSCODE}
                 alt="stocks"
-                style={{width: "360px"}}
+                style={{ width: "360px" }}
               />
               <div className="tab-right">
                 <div>
@@ -135,7 +138,9 @@ const Product = () => {
                   <div class="Para">
                     Transcode your content into HLS and other formats.
                   </div>
-                  <button className="product-btn">Explore Transcode</button>
+                  <Link to="/video-transcoding" className="Link-tag">
+                    <button className="product-btn">Explore Transcode</button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -146,7 +151,7 @@ const Product = () => {
                 class="ProductImg "
                 src={LIVE}
                 alt="stocks"
-                style={{width: "360px"}}
+                style={{ width: "360px" }}
               />
               <div className="tab-right">
                 <div>
@@ -154,12 +159,14 @@ const Product = () => {
                     100%<span class="MainPara">uptime</span>
                   </div>
                   <div class="Para">
-                    Offload your live streams to our edge and transcode + serve 
+                    Offload your live streams to our edge and transcode + serve
                     media directly.
                   </div>
-                  <button className="product-btn">
-                    Explore Live Streaming
-                  </button>
+                  <Link to="/machine-learning" className="Link-tag">
+                    <button className="product-btn">
+                      Explore Live Streaming
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
